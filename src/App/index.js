@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './style.css';
 
-function App() {
+function OldApp() {
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +20,11 @@ function App() {
       </header>
     </div>
   );
+}
+
+function App() {
+  const name = "Clarisse AGBEGNENOU";
+  return <h1>Bonjour, {name}</h1>
 }
 
 export default App;
