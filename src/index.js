@@ -5,11 +5,23 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// root.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>
+// );
+
+function tick() {
+  const element = (
+    <div>
+      <h1>Bonjour, monde !</h1>
+      <h2>Il est {new Date().toLocaleTimeString()}</h2>
+    </div>
+  );
+  root.render(element);
+}
+
+setInterval(tick, 1000);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
